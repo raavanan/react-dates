@@ -1,11 +1,11 @@
 @import "variables";
 
 .CalendarDay {
-  border: 1px solid lighten($react-dates-color-border-light, 3);
   padding: 0;
   box-sizing: border-box;
   color: $react-dates-color-gray;
   cursor: pointer;
+  margin-bottom: 10px !important;
 }
 
 .CalendarDay__button {
@@ -23,7 +23,10 @@
   overflow: visible;
   cursor: pointer;
   box-sizing: border-box;
-
+  &:focus {
+    outline: 0;
+    background: $react-dates-color-primary-shade-4;
+  }
   &:active {
     outline: 0;
   }
@@ -51,14 +54,12 @@
 
 .CalendarDay--hovered {
   background: lighten($react-dates-color-border-light, 3);
-  border: 1px double darken($react-dates-color-border-light, 3);
   color: inherit;
 }
 
 .CalendarDay--blocked-minimum-nights {
   color: $react-dates-color-gray-lighter;
   background: $react-dates-color-white;
-  border: 1px solid lighten($react-dates-color-border-light, 3);
   cursor: default;
 
   &:active {
@@ -68,13 +69,11 @@
 
 .CalendarDay--selected-span {
   background: $react-dates-color-primary-shade-2;
-  border: 1px double $react-dates-color-primary-shade-1;
-  color: $react-dates-color-white;
+  color: $react-dates-color-gray;
 
   &.CalendarDay--hovered,
   &:active {
     background: $react-dates-color-primary-shade-1;
-    border: 1px double $react-dates-color-primary;
   }
 
   &.CalendarDay--last-in-range {
@@ -85,19 +84,32 @@
 .CalendarDay--hovered-span,
 .CalendarDay--after-hovered-start {
   background: $react-dates-color-primary-shade-4;
-  border: 1px double $react-dates-color-primary-shade-3;
   color: $react-dates-color-secondary;
 
   &:active {
     background: $react-dates-color-primary-shade-3;
   }
 }
+.CalendarDay--selected-start {
+  border-radius : 50% 0 0 50%;
+  .CalendarDay__button {
+    border-radius : 50%;
+    background: $react-dates-color-primary;
+  }
+}
+.CalendarDay--selected-end {
+  border-radius : 0 50% 50% 0;
+  .CalendarDay__button {
+    border-radius : 50%;
+    background: $react-dates-color-primary;
+  }
+}
+
 
 .CalendarDay--selected-start,
 .CalendarDay--selected-end,
 .CalendarDay--selected {
-  background: $react-dates-color-primary;
-  border: 1px double $react-dates-color-primary;
+  background: $react-dates-color-primary-shade-2;
   color: $react-dates-color-white;
 
   &:active {
@@ -118,7 +130,6 @@
 .CalendarDay--blocked-out-of-range {
   color: $react-dates-color-gray-lighter;
   background: $react-dates-color-white;
-  border: 1px solid lighten($react-dates-color-border-light, 3);
   cursor: default;
 
   &:active {
