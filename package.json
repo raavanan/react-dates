@@ -39,14 +39,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/airbnb/react-dates.git"
+    "url": "git+https://github.com/raavanan/react-dates.git"
   },
-  "author": "Maja Wichrowska <maja.wichrowska@airbnb.com>",
+  "author": "Ganesh U <ganirockz@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/airbnb/react-dates/issues"
+    "url": "https://github.com/raavanan/react-dates/issues"
   },
-  "homepage": "https://github.com/airbnb/react-dates#readme",
+  "homepage": "https://github.com/raavanan/react-dates#readme",
   "devDependencies": {
     "@storybook/addon-info": "^3.2.9",
     "@storybook/addon-options": "^3.2.6",
