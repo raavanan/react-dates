@@ -6,10 +6,13 @@
   vertical-align: top;
 
   table {
-    border-collapse: collapse;
-    border-spacing: 0;
+    border-collapse: seperate;
+    border-spacing: 0 10px;
     caption: {
       caption-side: initial;
+    }
+    tr {
+      border-spacing: 5em;
     }
   }
 
@@ -41,8 +44,10 @@
 .CalendarMonth__caption {
   color: $react-dates-color-gray-dark;
   margin-top: 7px;
-  font-size: 18px;
-  text-align: center;
+  font-size: 16px;
+	letter-spacing: 1.2px;
+	text-align: center;
+	color: #333333;
   // necessary to not hide borders in FF
   margin-bottom: 2px;
   caption-side: initial;

@@ -19,7 +19,7 @@ module.exports = {
   OPEN_DOWN: 'down',
   OPEN_UP: 'up',
 
-  DAY_SIZE: 39,
+  DAY_SIZE: 45,
   BLOCKED_MODIFIER: 'blocked',
   WEEKDAYS: [0, 1, 2, 3, 4, 5, 6],
 };

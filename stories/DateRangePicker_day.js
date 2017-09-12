@@ -65,7 +65,7 @@ storiesOf('DRP - Day Props', module)
   ))
   .addWithInfo('blocks fridays', () => (
     <DateRangePickerWrapper
-      isDayBlocked={day => moment.weekdays(day.weekday()) === 'Friday'}
+      isDayBlocked={day => moment.weekdays(day.weekday()) === 'Saturday' || moment.weekdays(day.weekday()) === 'Sunday'}
       autoFocus
     />
   ))

@@ -5,7 +5,6 @@
   box-sizing: border-box;
   color: $react-dates-color-gray;
   cursor: pointer;
-  margin-bottom: 10px !important;
 }
 
 .CalendarDay__button {
@@ -15,7 +14,6 @@
   text-align: center;
   background: none;
   border: 0;
-  margin: 0;
   padding: 0;
   color: inherit;
   font: inherit;
@@ -41,6 +39,10 @@
   &:active {
     background: $react-dates-color-secondary;
   }
+}
+
+.CalendarDay--today {
+  border: 1px solid $react-dates-color-primary-shade-2;
 }
 
 .CalendarDay--outside {

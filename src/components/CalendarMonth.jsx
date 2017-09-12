@@ -134,7 +134,7 @@ export default class CalendarMonth extends React.Component {
       <div className={calendarMonthClasses} data-visible={isVisible}>
         <table>
           <caption className="CalendarMonth__caption js-CalendarMonth__caption">
-            <strong>{monthTitle}</strong>
+            {monthTitle}
           </caption>
 
           <tbody className="js-CalendarMonth__grid">
